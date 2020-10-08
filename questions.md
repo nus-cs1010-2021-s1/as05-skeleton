@@ -75,7 +75,7 @@ Print, to the standard output, the following information:
 - `contact through x` if there is no direct contact but 
   there is an indirect contact between m and n through a 
   third person x (replace x with the actual id).  If there
-  are multiple such third person, output the one with the
+  are multiple such people, output the person with the
   smallest id.
 - `no contact` if there is no direct nor indirect contact
   through a third person in the contact traces.
