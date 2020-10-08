@@ -62,7 +62,7 @@ Write a program `contact`, that reads from standard input:
 
 - a positive integer n,
 - followed by n lines of strings consisting of `'1'` or
-  `'0'` representing the social network of these n people.
+  `'0'` representing the contact traces of these n people.
 - followed by two positive integers m and n, representing
   the ids of a pair of people we are interested in querying.
   An input of i corresponds to the person whose contact
@@ -94,7 +94,7 @@ ooiwt@pe119:~/as05-skeleton$ cat inputs/contact.1.in
 11
 011
 0 1
-ooiwt@pe119:~/as05-skeleton$ ./social < inputs/contact.1.in
+ooiwt@pe119:~/as05-skeleton$ ./contact < inputs/contact.1.in
 direct contact
 ooiwt@pe119:~/as05-skeleton$ cat inputs/contact.2.in
 3
@@ -102,7 +102,7 @@ ooiwt@pe119:~/as05-skeleton$ cat inputs/contact.2.in
 11
 011
 0 2
-ooiwt@pe119:~/as05-skeleton$ ./social < inputs/contact.2.in
+ooiwt@pe119:~/as05-skeleton$ ./contact < inputs/contact.2.in
 contact through 1
 ooiwt@pe119:~/as05-skeleton$ cat inputs/contact.3.in
 4
