@@ -12,6 +12,7 @@ compile: $(FILES) life
 
 test: $(FILES)
 	for question in $(FILES); do ./test.sh $$question; done
+	echo "life: not tested.  Read questions.md for instructions."
 
 tidy: test
 	clang-tidy -quiet *.c 2> /dev/null
