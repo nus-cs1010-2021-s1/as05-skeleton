@@ -72,9 +72,11 @@ Print, to the standard output, the following information:
 
 - `direct contact` if there is direct contact between m
   and n
-- `contact through x` if there is an indirect contact
-  between m and n through a third person x (replace x with
-  the actual id)
+- `contact through x` if there is no direct contact but 
+  there is an indirect contact between m and n through a 
+  third person x (replace x with the actual id).  If there
+  are multiple such third person, output the one with the
+  smallest id.
 - `no contact` if there is no direct nor indirect contact
   through a third person in the contact traces.
 
