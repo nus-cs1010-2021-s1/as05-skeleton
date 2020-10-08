@@ -103,12 +103,50 @@ Write a program `social`, that reads from standard input two positive integers n
 
 The purpose of this question is for you to practice using a jagged 2D array. Hence, you are not allowed to store the input matrix or intermediate matrices using a rectangular array, or you risk being penalized heavily for this question.
 
-#### Hint
+### Hint
 There are many ways to solve this problem.  The most straightforward way is to compute the social network formed by a friendship chain of degree i, N(i), changing i from 1 to k.    
 
 - N(1) is just the input;
 - N(2) can be computed similar to how you solved Question 1.
 - Now, given N(i-1) and N(1), can you compute N(i)?  
+
+### Sample Run
+--------------
+```
+ooiwt@pe119:~/as05-skeleton$ cat inputs/social.1.in
+3 1
+1
+11
+011
+ooiwt@pe119:~/as05-skeleton$ ./social < inputs/social.1.in
+1
+11
+011
+ooiwt@pe119:~/as05-skeleton$ cat inputs/social.2.in
+4 2
+1
+01
+011
+1011
+ooiwt@pe119:~/as05-skeleton$ ./social < inputs/social.2.in
+1
+01
+111
+1111
+ooiwt@pe119:~/as05-skeleton$ cat inputs/social.3.in
+5 2
+1
+11
+011
+0011
+10011
+ooiwt@pe119:~/as05-skeleton$ ./social < inputs/social.3.in
+1
+11
+111
+1111
+11111
+```
 
 ## Question 3: Life (15 marks)
 ------------------------------
