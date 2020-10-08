@@ -161,10 +161,18 @@ We provide a total of seven patterns for you to play with.   You can run
 ```
 for instance, to observe the output from the program.
 
-Note that `make` will not automatically test `life` for you.  If you wish to check if your output is correct, you can run
+### Testing and Debugging
+
+Note that `make` will not automatically test `life` for you.  Before you submit, you should check your output is correct, by running
 ```
 ./test.sh life
 ```
-manually.  If you do so, you may wish to reduce the sleeping time or do not call `usleep` altogether to speed up testing.  Sleeping time only affects the animation, not the correctness of the output.
+manually.  If you do so, you may wish to reduce the sleeping time or do not call `usleep` altogether to speed up testing.  Sleeping time only affects the animation, not the correctness of the output.  
+
+To help you debug, you can redirect the output from life into a file, and use `vim -d` to view the differences.
+```
+ooiwt@pe119:~/as05-skeleton$ ./life < inputs/life.3.in > OUT
+ooiwt@pe119:~/as05-skeleton$ vim -d OUT outputs/life.3.out
+```
 
 Students interested in playing more games of life can also check out LifeWiki (http://conwaylife.com/wiki/Main_Page) for more patterns and spiral-click into various information about this game.
